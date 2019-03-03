@@ -20,6 +20,19 @@ This application requires:
   
 Fork this repository with: `git clone git@github.com:DanielMoreno58/mexicocompilado.git`
 
+### 1.1 Manage Git
+
+It's important to know that this project has the fundamentals of [git flow](https://bit.ly/2S3Rsvi).
+
+The branches that we will include are:
+
+- master
+- develop
+- feature
+- fix
+
+Every collaborator will work in a **feature** individually and this feature will checkout from develop, following the [git flow](https://bit.ly/2S3Rsvi) standard.
+
 ### 2. Create you local database
 
 After you do that you will need to create your own local database with the user `mexicocompilado_admin`, you can add a password to the user if you want in `config/database.yml` and gave the permissions of `Create role, Create DB, Replication`. [More information](https://www.w3resource.com/PostgreSQL/postgresql-database-roles.php)
