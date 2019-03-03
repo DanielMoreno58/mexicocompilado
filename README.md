@@ -19,7 +19,8 @@ This application requires:
 
 ## Contributors
 
-![imagen 2](https://user-images.githubusercontent.com/25211032/53692695-0878db80-3d5a-11e9-8304-fae5f26d75df.png) [Daniel Moreno](https://github.com/DanielMoreno58)
+| ![imagen 2](https://user-images.githubusercontent.com/25211032/53692695-0878db80-3d5a-11e9-8304-fae5f26d75df.png) | [Daniel Moreno](https://github.com/DanielMoreno58) |
+| ---- | ----- |
 
 ## Credits
 
