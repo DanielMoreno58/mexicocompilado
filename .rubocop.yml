@@ -5,6 +5,8 @@ AllCops:
     - '**/Rakefile'
   Exclude:
    - 'bin/*'
+   - 'tmp/*'
+   - 'node_modules/*'
    - 'db/seeds.rb'
    - 'db/schema.rb'
    - 'vendor/bundle/**/*'
