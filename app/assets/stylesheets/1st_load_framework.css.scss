@@ -29,14 +29,16 @@ img {
     list-style-type: none;
   }
 
-  .navbar-nav ul li {
+  .navbar-nav ul li:nth-child(n+1) {
     padding: 5px;
+    text-align: right;
   }
 
 }
 
 .menu-padding {
-  padding: 0.5rem 5rem;
+  padding: 0.5rem;
+  min-width: 11rem;
 }
 
 // override for the 'Home' navigation link
