@@ -27,6 +27,10 @@ img {
   min-width: 11rem;
 }
 
+.nav-link {
+  @extend .text-light;
+}
+
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
