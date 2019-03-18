@@ -1,5 +1,15 @@
 // import the CSS framework
 // Do not use *= require in Sass or your other stylesheets will not be able to access the Bootstrap mixins and variables.
+
+// Palette colors in web page
+$theme-colors: (
+  "primary": #52B2C0,
+  "secondary": #DFDFDF
+);
+
+// Jumbotron for Footer
+$jumbotron-bg: #58788D;
+
 @import "bootstrap";
 
 // make all images responsive by default
@@ -7,6 +17,30 @@ img {
   @extend .img-fluid;
   margin: 0 auto;
 }
+
+.menu {
+  border: 1px solid #808080;
+
+  .navbar-nav ul {
+    padding: 15px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .navbar-nav ul li:nth-child(n+1) {
+    padding: 5px;
+    text-align: right;
+  }
+
+}
+
+.menu-padding {
+  padding: 0.5rem;
+  min-width: 11rem;
+}
+
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
