@@ -7,5 +7,8 @@
 }
 
 .login-card {
+  @extend .text-center;
+  @extend .mx-auto;
+  @extend .card;
   box-shadow:0 4px 10px 4px rgba(#808080, .3);
 }
