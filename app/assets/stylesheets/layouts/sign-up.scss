@@ -19,22 +19,16 @@
   padding: 12.5% 0;
 }
 
+#error_explanation:not(:empty){
+  margin-bottom: 0;
+}
+
 .sign-up-buttons {
   @extend .text-center;
-  margin-top: 1rem;
 }
 
 .sign-up-buttons .actions {
   display: inline-block;
-}
-
-.sign-up-buttons .actions:nth-child(1) {
-  padding-right: 0;
-}
-
-.sign-up-buttons .actions:nth-child(2) {
-  padding-left: 0;
-  border-left: 1px solid white;
 }
 
 .sign-up-buttons .btn {
@@ -46,4 +40,8 @@
 .field {
   @extend .text-right;
   padding: 1rem;
+}
+
+.field:nth-last-child(2){
+  margin-bottom: 1rem;
 }

@@ -20,6 +20,11 @@ module MexicocompiladoRailsWebsite
       g.fixture_replacement :factory_bot, dir: "spec/factories"
     end
 
+    # Not show field_with_errors in html by default
+    config.action_view.field_error_proc = Proc.new { |html_tag, instance| 
+      html_tag
+    }
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
