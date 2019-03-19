@@ -11,12 +11,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <%= link_to 'Iniciar sesión', new_user_session_path, class: 'nav-link' %>
-            </li>
-            <li class="nav-item">
-              <%= link_to 'Crear cuenta', new_user_registration_path, class: 'nav-link' %>
-            </li>
+            <% if current_user %>
+                <li class="nav-link">Bienvenido <%= current_user.name %></li>
+                <li><%= link_to 'Cerrar sesión', destroy_user_session_path, class: 'nav-link' %></li>
+            <% else %>
+              <li class="nav-item">
+                <%= link_to 'Iniciar sesión', new_user_session_path, class: 'nav-link' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Crear cuenta', new_user_registration_path, class: 'nav-link' %>
+              </li>
+            <% end %>
           </ul>
         </div>
       </div>

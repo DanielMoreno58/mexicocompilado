@@ -31,6 +31,11 @@ img {
   @extend .text-light;
 }
 
+ul li:nth-last-child(2){
+  // TODO: Mejorar alineamiento
+  margin-right: 28rem;
+}
+
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
