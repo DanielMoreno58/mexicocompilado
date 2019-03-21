@@ -5,8 +5,12 @@ class ForoController < ApplicationController
   end
 
   def my_questions
-    @questions = Question.where user_id: current_user.id
-    render 'my-questions'
+    if user_signed_in?
+      @questions = Question.where user_id: current_user.id
+      render 'my-questions'
+    else
+      redirect_to new_user_session_path
+    end
   end
 
   def new
