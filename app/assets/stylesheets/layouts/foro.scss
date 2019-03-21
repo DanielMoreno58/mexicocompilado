@@ -1,3 +1,12 @@
+/* Pagina de Foro */
+
 .jumbotron .card {
   background: white;
+}
+
+/* Pagina de crear nueva pregunta */
+.new-question {
+  .row {
+    @extend .my-3
+  }
 }
