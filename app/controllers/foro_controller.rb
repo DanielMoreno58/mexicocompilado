@@ -4,6 +4,11 @@ class ForoController < ApplicationController
     @questions = Question.all
   end
 
+  def my_questions
+    @questions = Question.where user_id: current_user.id
+    render 'my-questions'
+  end
+
   def new
     @question = Question.new
   end
