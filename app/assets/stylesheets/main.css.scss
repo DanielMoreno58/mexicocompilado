@@ -1,0 +1,14 @@
+// Methodology of SMACSS implemented in this project by Daniel Moreno
+
+/* BASE */
+
+@import 'base/variables-twbs-custom';
+@import 'bootstrap';
+@import 'base/classes-twbs-custom';
+
+
+/* LAYOUTS */
+
+@import 'layouts/rails-modifications';
+@import 'layouts/login';
+@import 'layouts/sign-up';
