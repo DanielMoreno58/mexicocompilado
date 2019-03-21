@@ -1,25 +1,25 @@
 class ForoController < ApplicationController
 
   def index
-    @foro = Question.new
+    @questions = Question.new
   end
 
   def new
-    @foro = Question.new
+    @question = Question.new
   end
 
-  # def create
-  #   @foro = current_user.questions.new(question_params)
-  #   if @foro.save
-  #     redirect_to @foro
-  #   else
-  #     render 'new'
-  #   end
-  # end
+  def create
+    @question = Question.new question_params
+    if @question.save
+      redirect_to foro_index_path
+    else
+      render 'new'
+    end
+  end
 
-  # private
+  private
 
-  # def article_params
-  #   params.require(:question).permit(:question_name, :status)
-  # end
+  def question_params
+    params.require(:question).permit(:question_name, :content)
+  end
 end

@@ -2,7 +2,7 @@
 
   <h1>¿Cuál es tu pregunta?</h1>
 
-  <%= form_for @foro, url: {action: 'create'}, html: {class: 'new-question my-5'} do |f| %>
+  <%= form_for :question, url: foro_index_path, html: {class: 'new-question my-5'} do |f| %>
     <div class='row'>
       <%= f.label 'Titulo', class: 'col-2' %>
       <%= f.text_field :question_name, class: 'col-10 form-control', placeholder: 'Dale un titulo a tu pregunta' %>
