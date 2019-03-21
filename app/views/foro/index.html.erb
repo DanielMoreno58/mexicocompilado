@@ -15,16 +15,16 @@
         </div>
       </div>
       <div class="jumbotron secondary-jumbotron row">
-        <div class="card mb-3">
-          <div class="card-body">
-            This is some text within a card body. This is crutial. This is crutial. This is crutial. This is crutial. This is crutial
+
+        <% @questions.each do |question| %>
+          <div class="card mb-3 w-100">
+            <div class="card-body">
+              <%= question.question_name %>
+            </div>
           </div>
-        </div>
-        <div class="card mb-3">
-          <div class="card-body">
-            This is some text within a card body. This is crutial. This is crutial. This is crutial. This is crutial. This is crutial
-          </div>
-        </div>
+        <% end %>
+        
+
       </div>
     </div>
     <div class="col-2">

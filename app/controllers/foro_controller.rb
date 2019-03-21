@@ -1,7 +1,7 @@
 class ForoController < ApplicationController
 
   def index
-    @questions = Question.new
+    @questions = Question.all
   end
 
   def new
