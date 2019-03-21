@@ -19,6 +19,10 @@
         <div>
           <%= image_tag("foro.png", :alt => "banner foro") %>
         </div>
+       <% elsif current_page?(controller: '/perfil', action: 'index') %>
+        <div>
+          <%= image_tag("perfil.png", :alt => "banner perfil") %>
+        </div>
        <% end %>
 
        <% if current_page?(controller: 'devise/sessions', action: 'new') || current_page?(controller: 'devise/registrations', action: 'new') || current_page?(controller: 'welcome') %>
