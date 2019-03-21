@@ -15,7 +15,7 @@
     <main role="main">
        <%= render 'layouts/messages' %>
 
-       <% if current_page?(controller: 'foro', action: 'index') %>
+       <% if current_page?(controller: 'foro', action: 'index')  || current_page?(controller: 'foro', action: 'show', id: '1') || current_page?(controller: 'foro', action: 'new') %>
         <div>
           <%= image_tag("foro.png", :alt => "banner foro") %>
         </div>
