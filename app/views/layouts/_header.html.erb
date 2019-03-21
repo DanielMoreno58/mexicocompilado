@@ -12,7 +12,7 @@
         <ul class="navbar-nav ml-auto">
           <% if current_user %>
               <li class="nav-link">Bienvenido <%= current_user.name %></li>
-              <li><%= link_to 'Cerrar sesión', destroy_user_session_path, class: 'nav-link' %></li>
+              <li><%= link_to 'Cerrar sesión', destroy_user_session_path, method: 'delete', class: 'nav-link' %></li>
           <% else %>
             <li class="nav-item">
               <%= link_to 'Iniciar sesión', new_user_session_path, class: 'nav-link' %>
