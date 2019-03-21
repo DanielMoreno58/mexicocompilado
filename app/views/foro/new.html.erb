@@ -1,0 +1,15 @@
+<div class="container py-5">
+
+  <h1>Crear nueva pregunta</h1>
+
+  <%= form_for @foro, url: {action: 'create'}, html: {class: 'my-5'} do |f| %>
+    <div class='row'>
+      <%= f.label 'Titulo', class: 'col-2' %>
+      <%= f.text_field :question_name, class: 'col-10 form-control' %>
+    </div>
+    <div class="row">
+      <%= f.submit "Crear", class: 'offset-5 col-2 btn btn-primary' %>
+    </div>
+  <% end %>
+
+</div>
