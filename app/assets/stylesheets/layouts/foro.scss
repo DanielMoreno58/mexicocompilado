@@ -4,6 +4,20 @@
   background: white;
 }
 
+.jumbotron .card a {
+  color: inherit;
+}
+
+.jumbotron .card:hover {
+
+  a:hover{
+    text-decoration: none;
+  }
+
+  color: inherit;
+  box-shadow:0 4px 10px 4px rgba(#808080, .3);
+}
+
 /* Pagina de crear nueva pregunta */
 .new-question {
   .row {
