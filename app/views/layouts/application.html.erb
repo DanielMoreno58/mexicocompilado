@@ -14,7 +14,20 @@
     </header>
     <main role="main">
        <%= render 'layouts/messages' %>
-       <%= yield %>
+
+       <% if current_page?(controller: '/foro', action: 'index')  || current_page?(controller: '/foro', action: 'show', id: '1') || current_page?(controller: '/foro', action: 'new') %>
+        <div>
+          <%= image_tag("foro.png", :alt => "banner foro") %>
+        </div>
+       <% end %>
+
+       <% if current_page?(controller: 'devise/sessions', action: 'new') || current_page?(controller: 'devise/registrations', action: 'new') %>
+        <%= yield %>
+       <% else %>
+        <div class="container py-5">
+            <%= yield %>
+        </div>
+       <% end %>
     </main>
     <%= render 'layouts/footer' %>
   </body>

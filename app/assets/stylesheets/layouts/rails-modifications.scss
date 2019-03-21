@@ -4,6 +4,10 @@ img {
   margin: 0 auto;
 }
 
+.secondary-jumbotron {
+  background: $secondary;
+}
+
 .header-logo {
   width: 90px;
 }
@@ -33,6 +37,10 @@ img {
 
 .nav-link {
   @extend .text-light;
+}
+
+.footer {
+  margin-bottom: 0;
 }
 
 // override for the 'Home' navigation link

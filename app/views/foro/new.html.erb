@@ -1,0 +1,21 @@
+<div class="row">
+  <%= render 'layouts/menu' %>
+  <div class="offset-3 col-9">
+    <h1>¿Cuál es tu pregunta?</h1>
+
+    <%= form_for :question, url: foro_index_path, html: {class: 'new-question my-5'} do |f| %>
+      <div class='row'>
+        <%= f.label 'Titulo', class: 'col-2' %>
+        <%= f.text_field :question_name, class: 'col-10 form-control', placeholder: 'Dale un titulo a tu pregunta' %>
+      </div>
+      <div class='row'>
+        <%= f.label 'Contenido', class: 'col-2' %>
+        <%= f.text_area :content, size: '30x10', class: 'col-10 form-control', placeholder: 'Explica más a detalle tu pregunta' %>
+      </div>
+      <div class="row">
+        <%= f.submit "Crear", class: 'offset-10 col-2 btn btn-primary' %>
+      </div>
+    <% end %>
+
+  </div>
+</div>
