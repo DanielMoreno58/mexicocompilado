@@ -7,6 +7,10 @@
       <%= f.label 'Titulo', class: 'col-2' %>
       <%= f.text_field :question_name, class: 'col-10 form-control' %>
     </div>
+    <div class='row'>
+      <%= f.label 'Contenido', class: 'col-2' %>
+      <%= f.text_area :content, size: '30x10', class: 'col-10 form-control' %>
+    </div>
     <div class="row">
       <%= f.submit "Crear", class: 'offset-5 col-2 btn btn-primary' %>
     </div>
