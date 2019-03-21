@@ -39,6 +39,10 @@ img {
   @extend .text-light;
 }
 
+.footer {
+  margin-bottom: 0;
+}
+
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
