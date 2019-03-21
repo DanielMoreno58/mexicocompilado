@@ -6,7 +6,7 @@ class AnswersController < ApplicationController
   def create
     @question = Question.find(params[:foro_id])
     @answer = @question.answers.create(answer_params)
-    redirect_to foro_index_path
+    redirect_to foro_path(params[:foro_id])
   end
 
   def new
