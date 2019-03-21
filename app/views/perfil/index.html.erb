@@ -1,1 +1,49 @@
-<h1>hello world</h1>
+<div class="row">
+  <%= render 'layouts/menu' %>
+  <div class="jumbotron secondary-jumbotron offset-3 col-7">
+    <div class="card">
+      <div class="card-body row">
+        <div class="col-5">
+          <h4>Imagen de perfil</h4>
+          <%= image_tag 'profile_picture.png' %>
+          <input type="button" class="mt-3" name="" id="" disabled value="Cambiar foto">
+        </div>
+        <div class="col-7">
+          <div class="row">
+            <div class="col-12">
+              <h4>Datos personales</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <p>Nombre</p>
+              <p>Apellidos</p>
+              <p>Edad</p>
+            </div>
+            <div class="col-8">
+              <input class="mb-2 text-center" type="text" disabled value="Daniel Alexis">
+              <input class="mb-2 text-center" type="text" disabled value="Moreno Herrera">
+              <input class="mb-2 text-center bg-secondary shadow rounded" type="text" disabled value="21">
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12">
+              <h4>Experiencia en programación</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <p>Android</p>
+              <p>Java</p>
+            </div>
+            <div class="col-8">
+              <input class="mb-2 text-center" type="text" disabled value="1 año">
+              <input class="mb-2 text-center" type="text" disabled value="1 año">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= render 'shared/publicity_banner' %>
+</div>
