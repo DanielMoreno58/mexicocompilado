@@ -1,0 +1,49 @@
+.login-image {
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/assets/children.png');
+  min-height: 688px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-card {
+  @extend .text-center;
+  @extend .mx-auto;
+  @extend .card;
+  width: 600px;
+  padding: 3rem 0 0 0;
+  box-shadow:0 4px 10px 4px rgba(#808080, .3);
+}
+
+.login-image > div {
+  padding: 12.5% 0;
+}
+
+.login-buttons {
+  @extend .text-center;
+  margin-top: 1rem;
+}
+
+.login-buttons .actions {
+  display: inline-block;
+}
+
+.login-buttons .actions:nth-child(1) {
+  padding-right: 0;
+}
+
+.login-buttons .actions:nth-child(2) {
+  padding-left: 0;
+  border-left: 1px solid white;
+}
+
+.login-buttons .btn {
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.field {
+  @extend .text-right;
+  padding: 1rem;
+}

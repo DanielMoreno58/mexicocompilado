@@ -1,12 +1,48 @@
-// import the CSS framework
-// Do not use *= require in Sass or your other stylesheets will not be able to access the Bootstrap mixins and variables.
-@import "bootstrap";
-
 // make all images responsive by default
 img {
   @extend .img-fluid;
   margin: 0 auto;
 }
+
+.secondary-jumbotron {
+  background: $secondary;
+}
+
+.header-logo {
+  width: 90px;
+}
+
+.menu {
+  border: 1px solid #808080;
+
+  .navbar-nav ul {
+    padding: 15px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .navbar-nav ul li:nth-child(n+1) {
+    padding: 5px;
+    text-align: right;
+  }
+
+}
+
+.menu-padding {
+  padding: 0.5rem;
+  min-width: 11rem;
+}
+
+.nav-link {
+  @extend .text-light;
+}
+
+.footer {
+  margin-bottom: 0;
+}
+
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
@@ -30,13 +66,6 @@ img {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-lg;
-}
-
-// apply styles to HTML elements
-// to make views framework-neutral
-main {
-  @extend .container;
-  margin-top: 30px; // accommodate the navbar
 }
 
 section {

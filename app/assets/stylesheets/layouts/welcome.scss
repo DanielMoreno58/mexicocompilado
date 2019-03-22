@@ -1,0 +1,18 @@
+.welcome {
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/assets/home.png');
+  min-height: 688px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1.company_name {
+    margin-top: 20%;
+    font-size: 8rem;
+  }
+
+  .btn-comienza {
+    margin-left: 15%;
+    font-size: 1.5rem;
+  }
+
+}

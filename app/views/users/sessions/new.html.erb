@@ -1,0 +1,32 @@
+<div class="login-image">
+  <div>
+    <div class="container login-card">
+      <h2>Iniciar sesión</h2>
+
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field row">
+          <%= f.label :email, 'Correo electrónico: ', class:'col-4' %>
+          <%= f.email_field :email, placeholder: 'jonh@doe.com' , autofocus: true, autocomplete: "email", class: 'col-7' %>
+        </div>
+
+        <div class="field row">
+          <%= f.label :password, 'Contraseña: ', class:'col-4' %>
+          <%= f.password_field :password, placeholder: '******', autocomplete: "current-password", class: 'col-7' %>
+        </div>
+
+        <div class="login-buttons row">
+          <div class="actions col-6">
+            <%= f.submit "Iniciar sesión", class: 'btn btn-primary' %>
+          </div>
+
+          <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+            <div class="actions col-6">
+              <%= link_to "Crear cuenta", new_registration_path(resource_name), class: 'btn btn-primary' %>
+            </div>
+          <% end %>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+</div>

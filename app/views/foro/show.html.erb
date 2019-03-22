@@ -1,0 +1,32 @@
+<div class="row">
+  <%= render 'layouts/menu' %>
+  <div class="offset-3 col-7">
+    <div class="jumbotron secondary-jumbotron">
+      <div class="card mb-4 p-3">
+        <h2><%= @question.question_name %></h2>
+        <p><%= @question.content %></p>
+      </div>
+      <% @answers.each_with_index do |answer, index| %>
+        <div class="card p-3">
+          <div class="">
+            <h3>Respuesta <%= index+1 %></h3>
+            <p><%= answer.answer_description %></p>
+          </div>
+        </div>
+      <% end %>
+      <div class="card mt-5 p-3">
+        <div>
+          <h3>¿Sabes como solucionarlo?</h3>
+        </div>
+        <div>
+          <%= form_for [@question, @question.answers.build], url: foro_answers_path(@question.id) do |f| %>
+            <%= f.text_area :answer_description, rows: '5', cols: '100', class: 'form-control', placeholder: 'Agrega una respuesta' %>
+            <div class="row mt-2 mr-0">
+              <%= f.submit "Responder", class: 'offset-9 col-3 btn btn-primary' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
