@@ -1,0 +1,26 @@
+<div class="row">
+  <%= render 'layouts/menu' %>
+  <div class="offset-3 col-7">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h3>Tecnología: Javascript</h3>
+      </div>
+    </div>
+    <div class="jumbotron secondary-jumbotron row">
+      <% @courses.each do |course| %>
+        <div class="card mb-3 w-100">
+          <%= link_to course.link, target: "_blank" do %>
+            <div class="card-body">
+              <%= course.name %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-2">
+    <div class="position-fixed">
+      <%= image_tag("Publicidad.png", :alt => "banner foro", class: '') %>
+    </div>
+  </div>
+</div>
